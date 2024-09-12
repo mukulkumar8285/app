@@ -71,7 +71,7 @@ async function sendReminderEmail() {
 }
 
 // Schedule the task to send emails every minute (for testing purposes)
-cron.schedule('* * * * *', sendReminderEmail);
+cron.schedule('0 * * * *', sendReminderEmail);
 
 // Route to get task logs
 app.get('/logs', async (req, res) => {

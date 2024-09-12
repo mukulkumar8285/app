@@ -9,7 +9,7 @@ function App() {
     // Fetch task logs from the server when the component mounts
     const fetchLogs = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/logs');
+        const response = await axios.get('https://app-iyxz.onrender.com/logs');
         setLogs(response.data);
       } catch (error) {
         console.error('Error fetching logs:', error.message);
@@ -22,9 +22,9 @@ function App() {
   const handleAddTask = async () => {
     // Handle adding a new task (this is just a dummy function for now)
     try {
-      await axios.post('http://localhost:8080/add-task');
+      await axios.post('https://app-iyxz.onrender.com/add-task');
       // Update logs after adding a task
-      const response = await axios.get('http://localhost:8080/logs');
+      const response = await axios.get('https://app-iyxz.onrender.com/logs');
       setLogs(response.data);
     } catch (error) {
       console.error('Error adding task:', error.message);

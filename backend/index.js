@@ -54,7 +54,7 @@ async function logTaskExecution(taskName, status) {
 async function sendReminderEmail() {
   const mailOptions = {
     from: process.env.EMAIL_USER,
-    to: 'mukulved07@gmail.com',  // Replace with actual recipient email
+    to: 'mukul8285217496@gmail.com',  // Replace with actual recipient email
     subject: 'Reminder',
     text: 'This is a reminder email!'
   };
